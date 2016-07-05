@@ -13,9 +13,9 @@ automate migrations, and manage secret keys, saving the company hours developer 
 
 ## Q2
 
-Files are in the `q2` folder. To run, `chmod +x ./q2.rb` and run `./q2.rb`. Please note that I was running `ruby 2.3.0`.
+Files are in the `q2` folder. To run, `cd ./q2`, `chmod +x ./q2.rb` and run `./q2.rb`. Please note that I was running `ruby 2.3.0` and you must be in the `/.q2` folder to run the code.
 
-For testing, I used the `minitest` gem as my unit test framework. You must `gem install minitest` and then run `ruby -Ilib -e 'ARGV.each { |f| require f }' ./tests/test*.rb` to run the tests.
+For testing, I used the `minitest` gem as my unit test framework. You must `gem install minitest` and then run `ruby -Ilib -e 'ARGV.each { |f| require f }' ./tests/test*.rb` from inside the `./q2` folder to run the tests.
 
 ## Q3
 
