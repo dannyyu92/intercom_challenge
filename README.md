@@ -17,6 +17,11 @@ Files are in the `q2` folder. To run, `chmod +x ./q2.rb` and run `./q2.rb`. Plea
 
 For testing, I used the `minitest` gem as my unit test framework. You must `gem install minitest` and then run `ruby -Ilib -e 'ARGV.each { |f| require f }' ./tests/test*.rb` to run the tests.
 
+## Q3
+
+For this coding exercise, I coded a JS widget using ReactJS. You can find it here: 
+https://jsfiddle.net/dannyyu92/t5xu51fL/
+
 # Author
 
 Danny Yu  
