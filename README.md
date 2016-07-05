@@ -1,7 +1,6 @@
 # Intercom Coding Exercise
 
-1. What's your proudest achievement? It can be a personal project or something you've worked 
-on professionally. Just a short paragraph is fine, but I'd love to know why you're proud of it.
+## Q1
 
 My proudest achievement was setting up an entire continuous integration workflow for 
 the Rails applications at my last job. Prior to that, we were doing manual deployments, 
@@ -12,6 +11,13 @@ and Travis CI, the new CI workflow I built was able to do all this automatically
 each new push to git, as well as run through a test suite (which we did not have before), 
 automate migrations, and manage secret keys, saving the company hours developer time.
 
-2. Files are in the `q2` folder. To run, `chmod +x ./q2.rb` and run `./q2.rb`. Please note that I was running `ruby 2.3.0`.
+## Q2
+
+Files are in the `q2` folder. To run, `chmod +x ./q2.rb` and run `./q2.rb`. Please note that I was running `ruby 2.3.0`.
 
 For testing, I used the `minitest` gem as my unit test framework. You must `gem install minitest` and then run `ruby -Ilib -e 'ARGV.each { |f| require f }' ./tests/test*.rb` to run the tests.
+
+# Author
+
+Danny Yu  
+dannyyu92 [at] gmail.com  
