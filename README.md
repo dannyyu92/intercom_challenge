@@ -12,4 +12,6 @@ and Travis CI, the new CI workflow I built was able to do all this automatically
 each new push to git, as well as run through a test suite (which we did not have before), 
 automate migrations, and manage secret keys, saving the company hours developer time.
 
-2. Files are in the `q2` folder. To run, `chmod +x ./q2.rb` and run `./q2.rb`.
+2. Files are in the `q2` folder. To run, `chmod +x ./q2.rb` and run `./q2.rb`. Please note that I was running `ruby 2.3.0`.
+
+For testing, I used the `minitest` gem as my unit test framework. You must `gem install minitest` and then run `ruby -Ilib -e 'ARGV.each { |f| require f }' ./tests/test*.rb` to run the tests.

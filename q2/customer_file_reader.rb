@@ -14,9 +14,13 @@ class CustomerFileReader
     customers = []
     File.open(self.filename, "r") do |f|
       f.each_line do |line|
-        json_hash = JSON.parse(line)
-        customer = create_customer_from_hash(json_hash)
-        customers << customer
+        begin
+          json_hash = JSON.parse(line)
+          customer = create_customer_from_hash(json_hash)
+          customers << customer
+        rescue => e
+          puts "Error creating customer"
+        end
       end
     end
     return customers

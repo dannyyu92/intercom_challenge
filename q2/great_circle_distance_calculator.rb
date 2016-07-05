@@ -14,6 +14,7 @@ class GreatCircleDistanceCalculator
     @lon1 = lon1
     @lat2 = lat2
     @lon2 = lon2
+    validate_coordinates!
   end
 
   def calculate
@@ -34,6 +35,20 @@ class GreatCircleDistanceCalculator
 
   def degrees_to_radians(degrees)
     (degrees.to_f * Math::PI) / 180 
+  end
+
+  def validate_coordinates!
+    if coordinate_is_valid?(self.lat1) &&
+      coordinate_is_valid?(self.lat2) && 
+      coordinate_is_valid?(self.lon1) && 
+      coordinate_is_valid?(self.lon2)
+    else
+      raise "coordinates are invalid"
+    end
+  end
+
+  def coordinate_is_valid?(coordinate)
+    coordinate.to_s =~ /(\-?\d+(\.\d+)?)/
   end
 
 end
